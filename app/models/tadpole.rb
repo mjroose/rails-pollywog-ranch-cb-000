@@ -5,7 +5,6 @@ class Tadpole < ActiveRecord::Base
   def metamorphose
     frog = Frog.new(name: self.name, color: self.color)
     frog.pond = self.pond
-    self.destroy
     frog.save
   end
 end
