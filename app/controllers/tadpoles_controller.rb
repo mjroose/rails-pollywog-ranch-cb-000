@@ -2,7 +2,7 @@ class TadpolesController < ApplicationController
   before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :metamorphose]
 
   def metamorphose
-    raise params.inspect
+    binding.pry
   end
 
   def index
