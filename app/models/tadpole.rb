@@ -6,5 +6,6 @@ class Tadpole < ActiveRecord::Base
     frog = Frog.new(name: self.name, color: self.color)
     frog.pond = self.pond
     frog.save
+    frog
   end
 end
