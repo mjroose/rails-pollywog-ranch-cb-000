@@ -15,7 +15,8 @@
 
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
-  <%= form_tag("/tadpoles/#{@tadpole.id}/metamorphose") %>
-    <!-- <%= submit_tag 'Metamorphose' %> -->
-  <% end %>
 </div>
+
+<%= form_tag("/tadpoles/#{@tadpole.id}/metamorphose") %>
+  <!-- <%= submit_tag 'Metamorphose' %> -->
+<% end %>
